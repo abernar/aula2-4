@@ -21,4 +21,14 @@ app.get("/student", async (req, res) => {
   }
 });
 
+//teste git
+app.get("/student2", async (req, res) => {
+  try {
+    const students = await studentModel.find({});
+    res.send(students);
+  } catch (error) {
+      send.status(500).send(error)
+  }
+});
+
 export { app as studentRouter };
