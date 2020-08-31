@@ -24,6 +24,7 @@ const studentSchema = mongoose.Schema({
     value: {
         type: Number,
         required: true,
+        // valida nota
         // validate(value){
         //     if (value < 0){
         //         throw new Error('Valor inválido');
